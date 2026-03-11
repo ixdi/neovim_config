@@ -1,7 +1,7 @@
 vim.pack.add({
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
-	{ src = "https://github.com/saghen/blink.cmp" },
+	{ src = "https://github.com/saghen/blink.cmp", version = "*" },
 })
 
 require("blink.cmp").setup({
@@ -46,7 +46,7 @@ require("blink.cmp").setup({
 		implementation = "prefer_rust",
 		prebuilt_binaries = {
 			download = false, -- Automatically download prebuilt binaries when installing the plugin
-			-- ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
+			ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
 		},
 	},
 })

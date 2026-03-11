@@ -14,7 +14,8 @@
     },
     "blink.cmp": {
       "rev": "72c3bc29688c405263569ca1083d862bfc09d4fc",
-      "src": "https://github.com/saghen/blink.cmp"
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'*'"
     },
     "bufferline.nvim": {
       "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
@@ -39,6 +40,10 @@
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "fzf-lua": {
+      "rev": "d9508cc1d05ffcdc91a32dfd38fc1013a56b20da",
+      "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
       "rev": "7c4faa3540d0781a28588cafbd4dd187a28ac6e3",

@@ -4,6 +4,7 @@
 vim.pack.add({
 	{ src = "https://github.com/brianhuster/live-preview.nvim" },
 	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
+	{ src = "https://github.com/ibhagwan/fzf-lua" },
 })
 
 require("live-preview").setup()
@@ -18,7 +19,11 @@ vim.pack.add({
 	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
 
-require("render-markdown").setup({}) -- only mandatory if you want to set custom options
+require("render-markdown").setup({
+	latex = {
+		enabled = false,
+	},
+}) -- only mandatory if you want to set custom options
 
 vim.keymap.set("n", "<leader>mv", function()
 	require("render-markdown").toggle()
