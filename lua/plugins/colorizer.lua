@@ -1,5 +1,5 @@
 vim.pack.add({
-  { src="https://github.com/catgoose/nvim-colorizer.lua", event = "BufReadPre" },
+	{ src = "https://github.com/catgoose/nvim-colorizer.lua", event = "BufReadPre" },
 })
 
 require("colorizer").setup({

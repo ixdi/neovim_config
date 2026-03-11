@@ -1,7 +1,7 @@
 -- Formatting framework for Neovim
 
 vim.pack.add({
-  { src = "https://github.com/stevearc/conform.nvim", event = { "BufReadPre", "BufNewFile" } }
+	{ src = "https://github.com/stevearc/conform.nvim", event = { "BufReadPre", "BufNewFile" } },
 })
 
 require("conform").setup({

@@ -2,7 +2,7 @@
 -- tabs, which include filetype icons and close buttons.
 
 vim.pack.add({
-  { src = "http://github.com/akinsho/bufferline.nvim", event = "VeryLazy" }
+	{ src = "http://github.com/akinsho/bufferline.nvim", event = "VeryLazy" },
 })
 
 require("bufferline").setup({
@@ -32,7 +32,7 @@ require("bufferline").setup({
 			},
 		},
 		separator_style = "thin",
-	}
+	},
 })
 
 vim.keymap.set("n", "<leader>bp", "<Cmd>BufferLineTogglePin<cr>", { desc = "Toggle pin" })
@@ -40,15 +40,15 @@ vim.keymap.set("n", "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<cr>", { d
 
 -- buffer remove
 vim.pack.add({
-  { src = "https://github.com/echasnovski/mini.bufremove" }
+	{ src = "https://github.com/echasnovski/mini.bufremove" },
 })
 
 vim.keymap.set("n", "<leader>bd", function()
-  require("mini.bufremove").delete(0, false)
+	require("mini.bufremove").delete(0, false)
 end, { desc = "Delete Buffer" })
 
 vim.keymap.set("n", "<leader>bD", function()
-  require("mini.bufremove").delete(0, true)
+	require("mini.bufremove").delete(0, true)
 end, { desc = "Delete Buffer (Force)" })
 
 vim.keymap.set("n", "<leader>bda", ":%bd | e# | bd#<cr>", { desc = "Delete all buffers except the current" })

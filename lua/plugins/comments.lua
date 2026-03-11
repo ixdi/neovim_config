@@ -4,7 +4,7 @@
 -- Also, of course, dot-repeat, [count] support, etc.
 
 vim.pack.add({
-  { src = "https://github.com/numToStr/Comment.nvim" },
+	{ src = "https://github.com/numToStr/Comment.nvim" },
 })
 
 require("Comment").setup({
@@ -55,9 +55,15 @@ require("Comment").setup({
 -- in your project and loads them into a browsable list.
 
 vim.pack.add({
-  { src =	"https://github.com/folke/todo-comments.nvim", cmd = { "TodoTelescope" }, event = { "BufReadPost", "BufNewFile" } },
+	{
+		src = "https://github.com/folke/todo-comments.nvim",
+		cmd = { "TodoTelescope" },
+		event = { "BufReadPost", "BufNewFile" },
+	},
 })
 
-vim.keymap.set("n", "<leader>tcn", function() require("todo-comments").jump_next() end, { desc = "Next todo comment" })
+vim.keymap.set("n", "<leader>tcn", function()
+	require("todo-comments").jump_next()
+end, { desc = "Next todo comment" })
 vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo" })
 vim.keymap.set("n", "<leader>sT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<cr>", { desc = "Todo/Fix/Fixme" })

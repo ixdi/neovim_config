@@ -10,5 +10,10 @@ require("mini.notify").setup({
 	timeout = 1500,
 })
 
-vim.keymap.set("n", "<leader>nh", "<Plug>MiniNotify.show_history()", { desc = "MiniNotify History" })
-vim.keymap.set("n", "<leader>na", "<Plug>MiniNotify.get_all()", { desc = "MiniNotify Show All" })
+vim.keymap.set("n", "<leader>nh", function()
+	require("mini.notify").show_history()
+end, { desc = "MiniNotify History" })
+
+vim.keymap.set("n", "<leader>na", function()
+	require("mini.notify").get_all()
+end, { desc = "MiniNotify Show All" })

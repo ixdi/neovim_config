@@ -1,7 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
-	{ src = "https://github.com/ixdi/vim-snippets" },
 	{ src = "https://github.com/saghen/blink.cmp" },
 })
 
@@ -24,6 +23,7 @@ require("blink.cmp").setup({
 		-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
 		-- Adjusts spacing to ensure icons are aligned
 		nerd_font_variant = "mono",
+		use_nvim_cmp_as_default = true,
 	},
 
 	-- (Default) Only show the documentation popup when manually triggered
@@ -45,7 +45,8 @@ require("blink.cmp").setup({
 	fuzzy = {
 		implementation = "prefer_rust",
 		prebuilt_binaries = {
-			ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
+			download = false, -- Automatically download prebuilt binaries when installing the plugin
+			-- ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
 		},
 	},
 })
