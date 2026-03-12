@@ -13,7 +13,7 @@
       "src": "https://github.com/goolord/alpha-nvim.git"
     },
     "blink.cmp": {
-      "rev": "72c3bc29688c405263569ca1083d862bfc09d4fc",
+      "rev": "ec05b2de21a961157db0c9a19c7e21adf97c320b",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "d9508cc1d05ffcdc91a32dfd38fc1013a56b20da",
+      "rev": "30ba09afbc0eac5fc5ec8823418d1e45d0712b9f",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -153,7 +153,7 @@
       "src": "https://github.com/nvim-pack/nvim-spectre"
     },
     "nvim-tree.lua": {
-      "rev": "4b30847c91d498446cb8440c03031359b045e050",
+      "rev": "e1ad8b96834779b4c2674ef83be3f1a4ed007358",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {

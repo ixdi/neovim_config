@@ -16,7 +16,7 @@ require("conform").setup({
 		scss = { "dprint" },
 		markdown = { "prettierd" },
 		yaml = { "prettierd" },
-		lua = { "luaformatter" },
+		lua = { "stylua" },
 		graphql = { "prettierd" },
 		python = { "black" },
 	},
