@@ -18,7 +18,7 @@ vim.keymap.set("n", ",qq", "<cmd>q<cr>", { desc = "Quit" })
 vim.keymap.set("n", ",qa", "<cmd>qa!<cr>", { desc = "Quit all" })
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics under cursor" })
+vim.keymap.set("n", "<leader>ee", vim.diagnostic.open_float, { desc = "Show diagnostics under cursor" })
 vim.keymap.set("n", "<leader>en", diagnostic_goto(true), { desc = "Next Diagnostic" })
 vim.keymap.set("n", "<leader>ep", diagnostic_goto(false), { desc = "Prev Diagnostic" })
 

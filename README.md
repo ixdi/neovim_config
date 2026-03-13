@@ -124,7 +124,7 @@ This configuration includes the following plugins organized by category:
 
 | Keymap       | Mode   | Description                   |
 | ------------ | ------ | ----------------------------- |
-| `<leader>e`  | Normal | Show diagnostics under cursor |
+| `<leader>ee` | Normal | Show diagnostics under cursor |
 | `<leader>en` | Normal | Next diagnostic               |
 | `<leader>ep` | Normal | Previous diagnostic           |
 

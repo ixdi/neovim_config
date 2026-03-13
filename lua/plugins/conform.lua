@@ -11,7 +11,7 @@ require("conform").setup({
 		javascriptreact = { "dprint" },
 		typescriptreact = { "dprint" },
 		json = { "dprint" },
-		html = { "dprint" },
+		html = { "superhtml" },
 		css = { "dprint" },
 		scss = { "dprint" },
 		markdown = { "prettierd" },

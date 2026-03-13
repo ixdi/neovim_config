@@ -99,6 +99,7 @@ require("mason-lspconfig").setup({
 		"rust_analyzer",
 		"stylelint_lsp",
 		"stylua",
+		"superhtml",
 		"tailwindcss-language-server",
 	},
 })

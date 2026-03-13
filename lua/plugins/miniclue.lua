@@ -37,7 +37,7 @@ miniclue.setup({
 		config = {
 			border = "rounded",
 		},
-		delay = 0, -- Show hint pop-up immediately
+		delay = 100, -- Show hint pop-up immediately
 	},
 
 	clues = {
