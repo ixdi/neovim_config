@@ -88,7 +88,6 @@ require("mason-lspconfig").setup({
 		"dockerls",
 		"dprint",
 		"eslint",
-		"html",
 		"intelephense",
 		"jsonls",
 		"lua_ls",
