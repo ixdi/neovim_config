@@ -13,7 +13,7 @@
       "src": "https://github.com/goolord/alpha-nvim.git"
     },
     "blink.cmp": {
-      "rev": "f22f66eb7c4d037ed523a78b27ee235b7bc9a1f4",
+      "rev": "ba174a5819b0d1eb4e3bab8c0231a26293f58338",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "30ba09afbc0eac5fc5ec8823418d1e45d0712b9f",
+      "rev": "6e41ba7505f35a6f054ca682b043aa0cea36c2ef",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -53,7 +53,7 @@
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "lazydev.nvim": {
-      "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
+      "rev": "ff2cbcba459b637ec3fd165a2be59b7bbaeedf0d",
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "lazygit.nvim": {
@@ -137,7 +137,7 @@
       "src": "https://github.com/chrisgrieser/nvim-early-retirement"
     },
     "nvim-lspconfig": {
-      "rev": "0203a9608d63eda57679b01e69f33a7b4c34b0d1",
+      "rev": "dd261ad5266ab5bbec249d21efeceda98ff3e1a6",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-navic": {
@@ -153,7 +153,7 @@
       "src": "https://github.com/nvim-pack/nvim-spectre"
     },
     "nvim-tree.lua": {
-      "rev": "9197f3ee3f0c9a754aab5b16500db6d7da5f68fd",
+      "rev": "b3772adec8db61ba9098c5624a0823a77be3a23d",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {

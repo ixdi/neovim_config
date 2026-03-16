@@ -10,7 +10,6 @@ vim.opt.hlsearch = true -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true -- ignore case in search patterns
 vim.opt.laststatus = 3 -- only the last window will always have a status line
 vim.opt.linebreak = true -- companion to wrap, don't split words
-vim.g.mapleader = "," -- set leader key
 vim.opt.mousehide = true -- hide mouse when typing
 vim.opt.mouse = "a" -- allow the mouse to be used in neovim
 vim.opt.number = true -- set numbered lines
@@ -38,6 +37,8 @@ vim.opt.updatetime = 300 -- faster completion (4000ms default)
 vim.opt.wrap = false
 vim.opt.writebackup = false -- if a file is being edited by another program it is not allowed to be edited
 vim.opt.winborder = "rounded" -- set window borders
+
+vim.g.mapleader = "," -- set leader key
 
 vim.g.clipboard = {
 	-- name = "xsel_override",
