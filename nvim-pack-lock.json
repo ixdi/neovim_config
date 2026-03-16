@@ -13,7 +13,7 @@
       "src": "https://github.com/goolord/alpha-nvim.git"
     },
     "blink.cmp": {
-      "rev": "ba174a5819b0d1eb4e3bab8c0231a26293f58338",
+      "rev": "4fefa9ad0c706ade49eaa3b241df406adb7dce38",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -137,7 +137,7 @@
       "src": "https://github.com/chrisgrieser/nvim-early-retirement"
     },
     "nvim-lspconfig": {
-      "rev": "dd261ad5266ab5bbec249d21efeceda98ff3e1a6",
+      "rev": "1d13d2b0df9a0a02904c76d7ad6810f71d404406",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-navic": {

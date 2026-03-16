@@ -20,7 +20,7 @@ local function complete_packages()
 end
 
 vim.api.nvim_create_user_command("PackUpdate", function(info)
-	if #info.fargs ~= 0 then
+	if info.fargs ~= 0 then
 		vim.pack.update(info.fargs, { force = info.bang })
 	else
 		vim.pack.update(nil, { force = info.bang })

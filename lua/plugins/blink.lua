@@ -17,7 +17,15 @@ require("blink.cmp").setup({
 	-- C-k: Toggle signature help (if signature.enabled = true)
 	--
 	-- See :h blink-cmp-config-keymap for defining your own keymap
-	keymap = { preset = "default" },
+	keymap = {
+		preset = "none",
+		["<C-y>"] = { "select_and_accept", "fallback" },
+
+		["<Up>"] = { "select_prev", "fallback" },
+		["<Down>"] = { "select_next", "fallback" },
+
+		["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
+	},
 
 	appearance = {
 		-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
@@ -53,12 +61,16 @@ require("blink.cmp").setup({
 
 vim.api.nvim_create_autocmd("PackChanged", {
 	desc = "Run cargo build after pack changes",
-	group = vim.api.nvim_create_augroup("BlinkCmpPackChanged", { clear = true }),
 	callback = function(event)
 		local name, kind = event.data.spec.name, event.data.kind
 		if name == "blink.cmp" and (kind == "install" or kind == "update") then
-			vim.system({ "cargo build --release" }, { cwd = event.data.path })
-			vim.notify("blink.cmp installed, running build...", vim.log.levels.INFO)
+			vim.system({ "cargo build --release" }, { cwd = event.data.path }, function(result)
+				if result.code == 0 then
+					vim.notify("blink.cmp build completed successfully!", vim.log.levels.INFO)
+				else
+					vim.notify("blink.cmp build failed: " .. result.stderr, vim.log.levels.ERROR)
+				end
+			end)
 		end
 	end,
 })
