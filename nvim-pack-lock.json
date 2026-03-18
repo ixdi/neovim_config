@@ -13,7 +13,7 @@
       "src": "https://github.com/goolord/alpha-nvim.git"
     },
     "blink.cmp": {
-      "rev": "4fefa9ad0c706ade49eaa3b241df406adb7dce38",
+      "rev": "d1c0d6a65dc33ff4f3e31bd93f5c0d23bd55ce8a",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "6e41ba7505f35a6f054ca682b043aa0cea36c2ef",
+      "rev": "54669c347fe94d5be41322bd5526095f3e528713",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/echasnovski/mini.bufremove"
     },
     "mini.clue": {
-      "rev": "8b748316c5a5ab24ab18ccd5db9d62fe86fdddee",
+      "rev": "3012ba5349b2ef725c5e418a581174edc5c19dc3",
       "src": "https://github.com/nvim-mini/mini.clue"
     },
     "mini.indentscope": {
@@ -137,7 +137,7 @@
       "src": "https://github.com/chrisgrieser/nvim-early-retirement"
     },
     "nvim-lspconfig": {
-      "rev": "1d13d2b0df9a0a02904c76d7ad6810f71d404406",
+      "rev": "702f69fb167e9119f14adc4dfd4fcadf4d1b07a0",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-navic": {
@@ -153,7 +153,7 @@
       "src": "https://github.com/nvim-pack/nvim-spectre"
     },
     "nvim-tree.lua": {
-      "rev": "b3772adec8db61ba9098c5624a0823a77be3a23d",
+      "rev": "e16cd38962bc40c22a51ee004aa4f43726d74a16",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {

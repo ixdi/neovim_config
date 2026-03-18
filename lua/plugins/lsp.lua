@@ -104,8 +104,6 @@ require("mason-lspconfig").setup({
 })
 
 vim.api.nvim_create_autocmd("PackChanged", {
-	desc = "Re-run make install_jsregex after pack changes",
-	group = vim.api.nvim_create_augroup("LuaSnipPackChanged", { clear = true }),
 	callback = function(ev)
 		if ev.data.kind == "update" then
 			vim.notify("Mason updating...", vim.log.levels.INFO)
