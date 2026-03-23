@@ -5,7 +5,7 @@
       "src": "https://github.com/numToStr/Comment.nvim"
     },
     "LuaSnip": {
-      "rev": "dae4f5aaa3574bd0c2b9dd20fb9542a02c10471c",
+      "rev": "642b0c595e11608b4c18219e93b88d7637af27bc",
       "src": "https://github.com/L3MON4D3/LuaSnip"
     },
     "alpha-nvim": {
@@ -13,7 +13,7 @@
       "src": "https://github.com/goolord/alpha-nvim.git"
     },
     "blink.cmp": {
-      "rev": "612f4bd2bc29d9e7dc7be1dde960908951bedad1",
+      "rev": "62c3d54f7d739ee46f850ea6832383e3b7ca2ee1",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -61,7 +61,7 @@
       "src": "https://github.com/kdheepak/lazygit.nvim"
     },
     "leap.nvim": {
-      "rev": "774c452da3521d4434f912b6ca6dd97318aca4b0",
+      "rev": "25d893149edfc831ba188f16448b255ab582544c",
       "src": "https://codeberg.org/andyg/leap.nvim"
     },
     "live-preview.nvim": {
@@ -77,7 +77,7 @@
       "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "a676ab7282da8d651e175118bcf54483ca11e46d",
+      "rev": "a979821a975897b88493843301950c456a725982",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -129,7 +129,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-colorizer.lua": {
-      "rev": "ef211089af881bea206c7aa3f2693a81feee7e90",
+      "rev": "85a5e83cd4daa258cf95c3204e277991d6fbe747",
       "src": "https://github.com/catgoose/nvim-colorizer.lua"
     },
     "nvim-early-retirement": {
@@ -137,7 +137,7 @@
       "src": "https://github.com/chrisgrieser/nvim-early-retirement"
     },
     "nvim-lspconfig": {
-      "rev": "e057806776c8bed91971338d96a78a0f6a313dae",
+      "rev": "841c6d4139aedb8a3f2baf30cef5327371385b93",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-navic": {
@@ -153,7 +153,7 @@
       "src": "https://github.com/nvim-pack/nvim-spectre"
     },
     "nvim-tree.lua": {
-      "rev": "dfeeb12aaae37f23285101cf875416c29052b22a",
+      "rev": "f37ebac81164e1445c499cdd6de86e6d8e5d57e4",
       "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {
