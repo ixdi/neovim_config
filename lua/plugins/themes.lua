@@ -1,5 +1,9 @@
 -- Themes
-vim.pack.add({ "https://github.com/AlexvZyl/nordic.nvim.git" }, {
+vim.pack.add({
+	{ src = "https://github.com/AlexvZyl/nordic.nvim.git" },
+})
+
+require("nordic").setup({
 	-- Enable bold keywords.
 	bold_keywords = false,
 	-- Enable italic comments.
@@ -12,7 +16,7 @@ vim.pack.add({ "https://github.com/AlexvZyl/nordic.nvim.git" }, {
 		float = false,
 	},
 	-- Enable brighter float border.
-	bright_border = false,
+	bright_border = true,
 	-- Reduce the overall amount of blue in the theme (diverges from base Nord).
 	reduced_blue = true,
 	-- Swap the dark background with the normal one.
@@ -28,13 +32,24 @@ vim.pack.add({ "https://github.com/AlexvZyl/nordic.nvim.git" }, {
 		-- Blending the cursorline bg with the buffer bg.
 		blend = 0.85,
 	},
+	-- Visual selection options.
+	visual = {
+		-- Bold font in visual selection.
+		bold = false,
+		-- Bold visual selection number.
+		bold_number = true,
+		-- Available styles: 'dark', 'light'.
+		theme = "light",
+		-- Blending the visual selection bg with the buffer bg.
+		blend = 0.85,
+	},
 	noice = {
 		-- Available styles: `classic`, `flat`.
 		style = "classic",
 	},
 	telescope = {
 		-- Available styles: `classic`, `flat`.
-		style = "classic",
+		style = "flat",
 	},
 	leap = {
 		-- Dims the backdrop when using leap.

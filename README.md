@@ -212,8 +212,8 @@ This configuration includes the following plugins organized by category:
 | `gcO`         | Normal        | Add comment above                    |
 | `gcA`         | Normal        | Add comment at end of line           |
 | `<leader>tcn` | Normal        | Next TODO comment                    |
-| `<leader>st`  | Normal        | Search TODOs via Telescope           |
-| `<leader>sT`  | Normal        | Search TODO/FIX/FIXME via Telescope  |
+| `<leader>cn`  | Normal        | Search TODOs via Telescope           |
+| `<leader>cT`  | Normal        | Search TODO/FIX/FIXME via Telescope  |
 | `<leader>cd`  | Normal        | Generate documentation (Neogen)      |
 
 ### Surround (mini.surround)

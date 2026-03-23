@@ -65,5 +65,5 @@ vim.pack.add({
 vim.keymap.set("n", "<leader>tcn", function()
 	require("todo-comments").jump_next()
 end, { desc = "Next todo comment" })
-vim.keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo" })
-vim.keymap.set("n", "<leader>sT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<cr>", { desc = "Todo/Fix/Fixme" })
+vim.keymap.set("n", "<leader>ct", "<cmd>TodoTelescope<cr>", { desc = "Todo" })
+vim.keymap.set("n", "<leader>cT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<cr>", { desc = "Todo/Fix/Fixme" })

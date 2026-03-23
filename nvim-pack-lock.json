@@ -114,7 +114,7 @@
     },
     "noice.nvim": {
       "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
-      "src": "https://github.com/folke/noice.nvim"
+      "src": "https://github.com/folke/noice.nvim.git"
     },
     "nordic.nvim": {
       "rev": "4ce6bad95fde832f9bd10b991de846047a144628",
