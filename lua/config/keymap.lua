@@ -45,4 +45,7 @@ vim.keymap.set("v", ">", ">gv", { desc = "Increase indent" })
 vim.keymap.set("n", ",m", "<cmd>nohl<cr>", { desc = "Clear highlights" })
 
 -- Update plugins via vim.pack
-vim.keymap.set("n", "<leader>pu", vim.pack.update, { desc = "Update plugins" })
+vim.keymap.set("n", "<leader>pu", function()
+	vim.pack.update()
+	vim.cmd("MasonUpdateAll")
+end, { desc = "Update plugins" })

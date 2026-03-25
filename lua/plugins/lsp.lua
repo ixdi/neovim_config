@@ -41,6 +41,7 @@ vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+	{ src = "https://github.com/RubixDev/mason-update-all.git" },
 })
 
 local icons_default = require("config.defaults").icons
@@ -102,15 +103,11 @@ require("mason-lspconfig").setup({
 	},
 })
 
-vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function(ev)
-		if ev.data.kind == "update" then
-			vim.notify("Mason updating...", vim.log.levels.INFO)
-			---@diagnostic disable-next-line: param-type-mismatch
-			local ok = pcall(vim.cmd, "MasonUpdate")
-			if not ok then
-				vim.notify("Failed to run MasonUpdate", vim.log.levels.WARN)
-			end
-		end
+require("mason-update-all").setup()
+
+vim.api.nvim_create_autocmd("User", {
+	pattern = "MasonUpdateAllComplete",
+	callback = function()
+		print("Mason update finished")
 	end,
 })
