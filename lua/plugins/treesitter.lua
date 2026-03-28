@@ -60,18 +60,3 @@ require("nvim-treesitter.configs").setup({
 		},
 	},
 })
-
-vim.api.nvim_create_autocmd("PackChanged", {
-	desc = "Re-run treesitter setup after pack changes",
-	group = vim.api.nvim_create_augroup("TreesitterPackChanged", { clear = true }),
-	callback = function(event)
-		if event.data.kind == "update" then
-			vim.notify("nvim-treesitter updated, running TSUpdate...", vim.log.levels.INFO)
-			---@diagnostic disable-next-line: param-type-mismatch
-			local ok = pcall(vim.cmd, "TSUpdate")
-			if not ok then
-				vim.notify("Failed to run TSUpdate after nvim-treesitter update", vim.log.levels.WARN)
-			end
-		end
-	end,
-})

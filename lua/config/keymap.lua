@@ -48,4 +48,10 @@ vim.keymap.set("n", ",m", "<cmd>nohl<cr>", { desc = "Clear highlights" })
 vim.keymap.set("n", "<leader>pu", function()
 	vim.pack.update()
 	vim.cmd("MasonUpdateAll")
+	vim.notify("nvim-treesitter updated, running TSUpdate...", vim.log.levels.INFO)
+	---@diagnostic disable-next-line: param-type-mismatch
+	local ok = pcall(vim.cmd, "TSUpdate")
+	if not ok then
+		vim.notify("Failed to run TSUpdate after nvim-treesitter update", vim.log.levels.WARN)
+	end
 end, { desc = "Update plugins" })
