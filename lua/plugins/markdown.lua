@@ -16,7 +16,7 @@ vim.keymap.set("n", "<leader>md", ":LivePreview start<cr>", { desc = "Markdown p
 vim.pack.add({
 	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/nvim-tree/nvim-web-devicons",
-	"https://github.com/ixdi/render-markdown.nvim",
+	"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 })
 
 require("render-markdown").setup({

@@ -96,7 +96,6 @@ require("mason-lspconfig").setup({
 		"pylsp",
 		"ruff",
 		"rust_analyzer",
-		"stylelint_lsp",
 		"stylua",
 		"superhtml",
 		"tailwindcss-language-server",
