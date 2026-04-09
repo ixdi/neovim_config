@@ -262,8 +262,8 @@ This configuration includes the following plugins organized by category:
 
 | Keymap       | Mode   | Description                |
 | ------------ | ------ | -------------------------- |
-| `<leader>tt` | Normal | Toggle terminal            |
-| `<leader>tp` | Normal | Pick terminal              |
+| `<leader>tt` | Normal | Toggle terminal, C-d exit  |
+| `<leader>tp` | Normal | Pick terminal, C-d delete  |
 | `<leader>ts` | Normal | Send text to last terminal |
 
 ### Markdown
