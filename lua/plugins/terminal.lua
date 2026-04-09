@@ -1,27 +1,40 @@
 -- Modern terminal management plugin for Neovim
 vim.pack.add({
-	{ src = "https://github.com/waiting-for-dev/toggleterm.nvim", branch = "waiting-for-dev/wop" },
+	{ src = "https://github.com/waiting-for-dev/ergoterm.nvim" },
 })
 
-require("toggleterm").setup({
+require("ergoterm").setup({
+	terminal_defaults = {
+		layout = "right",
+		cleanup_on_success = false,
+		auto_scroll = true,
+	},
+	layout = "below",
 	size = 20,
-	open_mapping = [[<c-\>]],
-	hide_numbers = true,
-	shade_filetypes = {},
-	shade_terminals = true,
-	shading_factor = 2,
-	start_in_insert = true,
-	insert_mappings = true,
-	persist_size = true,
-	direction = "float",
-	close_on_exit = true,
-	shell = vim.o.shell,
-	float_opts = {
-		border = "rounded",
+	picker = {
+		picker = "telescope",
+		extra_select_actions = {
+			["<C-d>"] = {
+				fn = function(term)
+					term:cleanup()
+				end,
+				desc = "Delete terminal",
+			},
+			["<C-x>"] = {
+				fn = function(term)
+					term:close()
+				end,
+				desc = "Close terminal",
+			},
+		},
 	},
 })
 
-vim.keymap.set({ "n", "t" }, "<leader>tt", "<cmd>ToggleTerm<cr>", { desc = "Toggle Terminal" })
-vim.keymap.set("n", "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", { desc = "Toggle Horizontal Terminal" })
-vim.keymap.set("n", "<leader>tl", "<cmd>ToggleTermSendCurrentLine <T_ID><cr>", { desc = "Toggle Send Current Line" })
-vim.keymap.set("n", "<leader>tv", "<cmd>ToggleTermSendVisualLines <T_ID><cr>", { desc = "Toggle Send Visual Lines" })
+vim.keymap.set(
+	"n",
+	"<leader>tt",
+	":TermNew layout=below<CR>",
+	{ desc = "Create Terminal Below", noremap = true, silent = true }
+)
+vim.keymap.set("n", "<leader>tp", ":TermSelect<cr>", { desc = "Pick Terminal" })
+vim.keymap.set({ "n", "x" }, "<leader>ts", ":TermSend! new_line=false<cr>", { desc = "Send to last terminal" })

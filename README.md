@@ -184,7 +184,7 @@ This configuration includes the following plugins organized by category:
 
 | Keymap        | Mode     | Description             |
 | ------------- | -------- | ----------------------- |
-| `<leader>g`   | Normal   | Open LazyGit            |
+| `<leader>lg`  | Normal   | Open LazyGit            |
 | `]c`          | Normal   | Next git hunk           |
 | `[c`          | Normal   | Previous git hunk       |
 | `<leader>ghs` | Normal   | Stage hunk              |
@@ -258,21 +258,20 @@ This configuration includes the following plugins organized by category:
 | `<leader>yc` | Normal        | Clear yank history              |
 | `y`          | Normal/Visual | Yank (preserve cursor position) |
 
-### Terminal (toggleterm)
+### Terminal (ergoterm)
 
 | Keymap       | Mode   | Description                |
 | ------------ | ------ | -------------------------- |
 | `<leader>tt` | Normal | Toggle terminal            |
-| `<leader>tf` | Normal | Toggle floating terminal   |
-| `<leader>th` | Normal | Toggle horizontal terminal |
-| `<leader>tv` | Normal | Toggle vertical terminal   |
+| `<leader>tp` | Normal | Pick terminal              |
+| `<leader>ts` | Normal | Send text to last terminal |
 
 ### Markdown
 
-| Keymap       | Mode   | Description            |
-| ------------ | ------ | ---------------------- |
-| `<leader>md` | Normal | Start live preview     |
-| `<leader>mv` | Normal | Toggle markdown render |
+| Keymap      | Mode   | Description            |
+| ----------- | ------ | ---------------------- |
+| `<space>md` | Normal | Start live preview     |
+| `<space>mv` | Normal | Toggle markdown render |
 
 ### Notifications
 

@@ -4,4 +4,4 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 })
 
-vim.keymap.set("n", "<leader>g", ":LazyGit<cr>", { desc = "LazyGit" })
+vim.keymap.set("n", "<space>g", ":LazyGit<cr>", { desc = "LazyGit" })

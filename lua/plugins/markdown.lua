@@ -9,7 +9,7 @@ vim.pack.add({
 
 require("live-preview").setup()
 
-vim.keymap.set("n", "<leader>md", ":LivePreview start<cr>", { desc = "Markdown preview" })
+vim.keymap.set("n", "<space>md", ":LivePreview start<cr>", { desc = "Markdown preview" })
 
 -- render-markdown.nvim is a plugin that uses treesitter to render markdown in a floating window
 
@@ -62,6 +62,6 @@ require("render-markdown").setup({
 	},
 }) -- only mandatory if you want to set custom options
 
-vim.keymap.set("n", "<leader>mv", function()
+vim.keymap.set("n", "<space>mv", function()
 	require("render-markdown").toggle()
 end, { desc = "Markdown preview" })
