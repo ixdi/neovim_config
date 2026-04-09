@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"nvim-tree",
 		"mason",
 		"notify",
-		"toggleterm",
+		"ergoterm",
 		"lazyterm",
 	},
 	callback = function()

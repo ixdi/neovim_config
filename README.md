@@ -80,7 +80,7 @@ This configuration includes the following plugins organized by category:
 
 ### Terminal & Floating Windows
 
-- **toggleterm.nvim** - Terminal management (toggle, float, horizontal, vertical)
+- **ergoterm.nvim** - Terminal management (toggle, float, horizontal, vertical)
 
 ### Markdown
 

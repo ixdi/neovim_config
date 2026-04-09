@@ -13,7 +13,7 @@ require("ibl").setup({
 			"nvim-tree",
 			"mason",
 			"notify",
-			"toggleterm",
+			"ergoterm",
 		},
 	},
 	scope = { enabled = false },

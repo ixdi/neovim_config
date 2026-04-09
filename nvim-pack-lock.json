@@ -200,10 +200,6 @@
       "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
       "src": "https://github.com/folke/todo-comments.nvim"
     },
-    "toggleterm.nvim": {
-      "rev": "87b2d6a3cab8e2bd9a0255427074285f0365398d",
-      "src": "https://github.com/waiting-for-dev/toggleterm.nvim"
-    },
     "ts-error-translator.nvim": {
       "rev": "558abff11b9e8f4cefc0de09df780c56841c7a4b",
       "src": "https://github.com/dmmulroy/ts-error-translator.nvim"
