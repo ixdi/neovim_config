@@ -2,8 +2,6 @@
 vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/AndreM222/copilot-lualine" },
-	{ src = "git@github.com:SmiteshP/nvim-navic.git" },
-	{ src = "https://github.com/AlexvZyl/nordic.nvim.git" },
 	{ src = "https://github.com/folke/noice.nvim.git" },
 })
 
@@ -13,7 +11,7 @@ require("lualine").setup({
 		theme = "nordic",
 		globalstatus = true,
 		icons_enabled = true,
-		disabled_filetypes = { statusline = { "dashboard", "alpha" } },
+		disabled_filetypes = { statusline = { "dashboard" } },
 	},
 	sections = {
 		lualine_a = { "mode" },
@@ -46,14 +44,6 @@ require("lualine").setup({
 					unnamed = "",
 				},
 			}, -- stylua: ignore
-			{
-				function()
-					return require("nvim-navic").get_location()
-				end,
-				cond = function()
-					return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
-				end,
-			},
 		},
 		lualine_x = {
       -- stylua: ignore

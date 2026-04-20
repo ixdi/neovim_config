@@ -39,7 +39,6 @@ This configuration includes the following plugins organized by category:
 - **mini.bufremove** - Buffer deletion utility
 - **lualine.nvim** - Fast and customizable statusline
 - **copilot-lualine** - Copilot status indicator for lualine
-- **nvim-navic** - Show code context/location in statusline
 - **nvim-colorizer.lua** - Highlight color names and codes
 - **indent-blankline.nvim** - Show indentation guides
 - **mini.indentscope** - Active indent guide with animation

@@ -8,7 +8,6 @@ require("ibl").setup({
 	exclude = {
 		filetypes = {
 			"help",
-			"alpha",
 			"dashboard",
 			"nvim-tree",
 			"mason",

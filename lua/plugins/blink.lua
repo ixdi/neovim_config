@@ -19,11 +19,10 @@ require("blink.cmp").setup({
 	-- See :h blink-cmp-config-keymap for defining your own keymap
 	keymap = {
 		preset = "none",
+		["<Esc>"] = { "cancel", "fallback" },
 		["<C-y>"] = { "select_and_accept", "fallback" },
-
 		["<Up>"] = { "select_prev", "fallback" },
 		["<Down>"] = { "select_next", "fallback" },
-
 		["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
 	},
 
@@ -34,8 +33,18 @@ require("blink.cmp").setup({
 		use_nvim_cmp_as_default = true,
 	},
 
-	-- (Default) Only show the documentation popup when manually triggered
-	completion = { documentation = { auto_show = true, auto_show_delay_ms = 500 } },
+	completion = {
+		keyword = { range = "full" },
+		documentation = {
+			auto_show = true,
+			auto_show_delay_ms = 500,
+		},
+		menu = {
+			auto_show = true,
+		},
+		-- Display a preview of the selected item on the current line
+		ghost_text = { enabled = true },
+	},
 
 	signature = { enabled = true },
 
@@ -52,10 +61,10 @@ require("blink.cmp").setup({
 	-- See the fuzzy documentation for more information
 	fuzzy = {
 		implementation = "rust",
-		prebuilt_binaries = {
-			download = false, -- Automatically download prebuilt binaries when installing the plugin
-			ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
-		},
+		-- prebuilt_binaries = {
+		-- 	download = false, -- Automatically download prebuilt binaries when installing the plugin
+		-- 	ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
+		-- },
 	},
 })
 

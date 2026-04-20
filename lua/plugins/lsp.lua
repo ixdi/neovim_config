@@ -67,6 +67,8 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "",
 		},
 	},
+	virtual_text = false,
+	virtual_lines = { current_line = true },
 })
 
 require("mason").setup({
@@ -110,3 +112,15 @@ vim.api.nvim_create_autocmd("User", {
 		print("Mason update finished")
 	end,
 })
+
+-- vim.api.nvim_create_autocmd("LspAttach", {
+-- 	callback = function(args)
+-- 		local bufnr = args.buf
+-- 		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+--
+-- 		-- Native LSP completion
+-- 		if client:supports_method("textDocument/completion") then
+-- 			vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
+-- 		end
+-- 	end,
+-- })

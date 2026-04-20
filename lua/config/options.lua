@@ -1,6 +1,8 @@
+vim.opt.autocomplete = false
 vim.opt.backup = false -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- copy/paste to system clipboard
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
+vim.opt.completeopt = "menu,menuone,noselect,nearest"
 vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
 vim.opt.cursorline = true -- highlight the current line
 vim.opt.expandtab = true -- convert tabs to spaces
@@ -40,27 +42,7 @@ vim.opt.winborder = "rounded" -- set window borders
 
 vim.g.mapleader = "," -- set leader key
 
-vim.g.clipboard = {
-	-- name = "xsel_override",
-	-- copy = {
-	-- 	["+"] = "xsel --input --clipboard",
-	-- 	["*"] = "xsel --input --primary",
-	-- },
-	-- paste = {
-	-- 	["+"] = "xsel --output --clipboard",
-	-- 	["*"] = "xsel --output --primary",
-	-- },
-	name = "wl-clipboard (wsl)",
-	copy = {
-		["+"] = "wl-copy --foreground --type text/plain",
-		["*"] = "wl-copy --foreground --primary --type text/plain",
-	},
-	paste = {
-		["+"] = "wl-paste",
-		["*"] = "wl-paste --primary",
-	},
-	cache_enabled = 1,
-}
+vim.g.clipboard = "unnamedplus"
 
 -- Open binary files
 vim.api.nvim_create_autocmd("BufReadCmd", {
