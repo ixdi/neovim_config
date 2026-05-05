@@ -1,10 +1,15 @@
 vim.pack.add({
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
+	{ src = "https://github.com/saghen/blink.lib" },
 	{ src = "https://github.com/saghen/blink.cmp" },
 })
 
-require("blink.cmp").setup({
+local cmp = require("blink.cmp")
+
+cmp.build():wait(60000)
+
+cmp.setup({
 	-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
 	-- 'super-tab' for mappings similar to vscode (tab to accept)
 	-- 'enter' for enter to accept
@@ -66,20 +71,4 @@ require("blink.cmp").setup({
 		-- 	ignore_version_mismatch = true, -- Ignore version mismatch when using prebuilt binaries
 		-- },
 	},
-})
-
-vim.api.nvim_create_autocmd("PackChanged", {
-	desc = "Run cargo build after pack changes",
-	callback = function(event)
-		local name, kind = event.data.spec.name, event.data.kind
-		if name == "blink.cmp" and (kind == "install" or kind == "update") then
-			vim.system({ "cargo build --release" }, { cwd = event.data.path }, function(result)
-				if result.code == 0 then
-					vim.notify("blink.cmp build completed successfully!", vim.log.levels.INFO)
-				else
-					vim.notify("blink.cmp build failed: " .. result.stderr, vim.log.levels.ERROR)
-				end
-			end)
-		end
-	end,
 })
