@@ -179,7 +179,7 @@ require("yazi").setup({
 })
 
 -- Next, map a key to open yazi.nvim
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<Space>y", function()
 	require("yazi").yazi()
 end)
 

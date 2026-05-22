@@ -18,86 +18,93 @@ This configuration includes the following plugins organized by category:
 
 ### Completion & Autocompletion
 
-- **blink.cmp** - High-performance autocompletion with fuzzy matching
-- **LuaSnip** - Snippet engine for Neovim
-- **friendly-snippets** - Collection of preconfigured snippets
-- **nvim-autopairs** - Auto-close and manage bracket pairs
-- **nvim-ts-autotag** - Auto-close and rename HTML/XML tags
+- **blink.cmp** (`saghen/blink.cmp`) - High-performance autocompletion with fuzzy matching
+- **blink.lib** (`saghen/blink.lib`) - Blink library dependency
+- **LuaSnip** (`L3MON4D3/LuaSnip`) - Snippet engine for Neovim
+- **friendly-snippets** (`rafamadriz/friendly-snippets`) - Collection of preconfigured snippets
+- **nvim-autopairs** (`windwp/nvim-autopairs`) - Auto-close and manage bracket pairs
+- **nvim-ts-autotag** (`windwp/nvim-ts-autotag`) - Auto-close and rename HTML/XML tags
 
 ### LSP & Code Intelligence
 
-- **nvim-lspconfig** - Language Server Protocol configuration
-- **mason.nvim** - Package manager for LSP servers, DAP, and linters
-- **mason-lspconfig** - Bridge between mason and lspconfig
-- **conform.nvim** - Code formatting framework
-- **neogen** - Auto-generate annotations and documentation (jsDoc, EmmyLua, etc.)
-- **ts-error-translator.nvim** - Translate TypeScript errors to readable messages
+- **nvim-lspconfig** (`neovim/nvim-lspconfig`) - Language Server Protocol configuration
+- **mason.nvim** (`mason-org/mason.nvim`) - Package manager for LSP servers, DAP, and linters
+- **mason-lspconfig** (`mason-org/mason-lspconfig.nvim`) - Bridge between mason and lspconfig
+- **mason-update-all** (`RubixDev/mason-update-all`) - Update all Mason packages
+- **conform.nvim** (`stevearc/conform.nvim`) - Code formatting framework (biome, prettierd, stylua, black, superhtml)
+- **neogen** (`danymat/neogen`) - Auto-generate annotations and documentation (jsDoc, EmmyLua, Google docstrings, etc.)
+- **ts-error-translator.nvim** (`dmmulroy/ts-error-translator.nvim`) - Translate TypeScript errors to readable messages
 
 ### UI & Statusline
 
-- **bufferline.nvim** - Tab-like buffer navigation with icons
-- **mini.bufremove** - Buffer deletion utility
-- **lualine.nvim** - Fast and customizable statusline
-- **copilot-lualine** - Copilot status indicator for lualine
-- **nvim-colorizer.lua** - Highlight color names and codes
-- **indent-blankline.nvim** - Show indentation guides
-- **mini.indentscope** - Active indent guide with animation
-- **illuminate** - Highlight word references under cursor
+- **bufferline.nvim** (`akinsho/bufferline.nvim`) - Tab-like buffer navigation with icons
+- **mini.bufremove** (`echasnovski/mini.bufremove`) - Buffer deletion utility
+- **lualine.nvim** (`nvim-lualine/lualine.nvim`) - Fast and customizable statusline
+- **copilot-lualine** (`AndreM222/copilot-lualine`) - Copilot status indicator for lualine
+- **noice.nvim** (`folke/noice.nvim`) - UI replacement for Neovim messages, cmdline, and popupmenu
+- **nvim-colorizer.lua** (`catgoose/nvim-colorizer.lua`) - Highlight color names and codes (CSS, Tailwind, HSL, OKLCH, etc.)
+- **indent-blankline.nvim** (`lukas-reineke/indent-blankline.nvim`) - Show indentation guides
+- **mini.indentscope** (`echasnovski/mini.indentscope`) - Active indent guide with animation
+- **vim-illuminate** (`RRethy/vim-illuminate`) - Highlight word references under cursor (LSP, Treesitter, regex)
 
 ### Navigation & File Management
 
-- **nvim-tree.lua** - File explorer tree view
-- **nvim-web-devicons** - Filetype icons
-- **telescope.nvim** - Fuzzy finder for files, buffers, grep, and more
-- **telescope-fzf-native.nvim** - FZF backend for Telescope
-- **telescope-undo.nvim** - Undo history browser
-- **telescope-ui-select.nvim** - UI select extension
-- **bufferline.nvim** - Buffer navigation and display
+- **nvim-tree.lua** (`nvim-tree/nvim-tree.lua`) - File explorer tree view
+- **yazi.nvim** (`mikavilpas/yazi.nvim`) - Yazi file manager integration
+- **nvim-web-devicons** (`nvim-tree/nvim-web-devicons`) - Filetype icons
+- **telescope.nvim** (`nvim-telescope/telescope.nvim`) - Fuzzy finder for files, buffers, grep, and more
+- **telescope-fzf-native.nvim** (`nvim-telescope/telescope-fzf-native.nvim`) - FZF backend for Telescope
+- **telescope-undo.nvim** (`debugloop/telescope-undo.nvim`) - Undo history browser
+- **telescope-ui-select.nvim** (`nvim-telescope/telescope-ui-select.nvim`) - UI select extension
 
 ### Git Integration
 
-- **gitsigns.nvim** - Git signs, hunk navigation, and staging
-- **lazygit.nvim** - Integrated lazygit terminal UI
+- **gitsigns.nvim** (`lewis6991/gitsigns.nvim`) - Git signs, hunk navigation, and staging
+- **lazygit.nvim** (`kdheepak/lazygit.nvim`) - Integrated lazygit terminal UI
 
 ### Search & Replace
 
-- **spectre.nvim** - Search and replace across multiple files
-- **vim-illuminate** - Auto-highlight references
+- **grug-far.nvim** (`MagicDuck/grug-far.nvim`) - Search and replace across multiple files
 
 ### Editing & Text Objects
 
-- **Comment.nvim** - Toggle comments with `gc` operator
-- **todo-comments.nvim** - Highlight and search TODO/FIXME comments
-- **mini.surround** - Add/delete/replace surrounding characters
-- **multicursor.nvim** - Multiple cursor editing
-- **yanky.nvim** - Enhanced yank history and paste management
-- **early-retirement** - Auto-close unused buffers
+- **Comment.nvim** (`numToStr/Comment.nvim`) - Toggle comments with `gc` operator
+- **todo-comments.nvim** (`folke/todo-comments.nvim`) - Highlight and search TODO/FIXME comments
+- **mini.surround** (`echasnovski/mini.surround`) - Add/delete/replace surrounding characters
+- **multicursor.nvim** (`jake-stewart/multicursor.nvim`) - Multiple cursor editing
+- **yanky.nvim** (`gbprod/yanky.nvim`) - Enhanced yank history and paste management
+- **nvim-early-retirement** (`chrisgriesder/nvim-early-retirement`) - Auto-close unused buffers
 
 ### Treesitter & Syntax
 
-- **nvim-treesitter** - Syntax highlighting, indentation, and incremental selection
+- **nvim-treesitter** (`nvim-treesitter/nvim-treesitter`) - Syntax highlighting, indentation, and incremental selection
 
 ### Terminal & Floating Windows
 
-- **ergoterm.nvim** - Terminal management (toggle, float, horizontal, vertical)
+- **ergoterm.nvim** (`waiting-for-dev/ergoterm.nvim`) - Terminal management (toggle, pick, send text)
 
 ### Markdown
 
-- **live-preview.nvim** - Live markdown preview in browser
-- **render-markdown.nvim** - Render markdown with treesitter in floating window
+- **live-preview.nvim** (`brianhuster/live-preview.nvim`) - Live markdown preview in browser
+- **render-markdown.nvim** (`MeanderingProgrammer/render-markdown.nvim`) - Render markdown with treesitter
 
 ### Notifications & Clues
 
-- **mini.notify** - Notification manager
-- **mini.clue** - Show keymap hints and clues
+- **mini.notify** (`nvim-mini/mini.notify`) - Notification manager
+- **mini.clue** (`nvim-mini/mini.clue`) - Show keymap hints and clues
+
+### Motion & Scrolling
+
+- **leap.nvim** (`andyg/leap.nvim`) - Fast motion plugin for jumping to any location
+- **neoscroll.nvim** (`karb94/neoscroll.nvim`) - Smooth scrolling animations
 
 ### AI & Copilot
 
-- **copilot.vim** - GitHub Copilot integration
+- **copilot.vim** (`github/copilot.vim`) - GitHub Copilot integration
 
 ### Themes
 
-- **nordic.nvim** - Nord-based colorscheme
+- **nordic.nvim** (`AlexvZyl/nordic.nvim`) - Nord-based colorscheme
 
 ---
 
@@ -105,19 +112,20 @@ This configuration includes the following plugins organized by category:
 
 ### General Keymaps
 
-| Keymap             | Mode   | Description             |
-| ------------------ | ------ | ----------------------- |
-| `jj`               | Insert | Exit insert mode        |
-| `<leader><leader>` | Normal | LSP hover               |
-| `,w`               | Normal | Write/Save buffer       |
-| `,qq`              | Normal | Quit                    |
-| `,qa`              | Normal | Quit all                |
-| `,m`               | Normal | Clear search highlights |
-| `<leader>pu`       | Normal | Update plugins          |
-| `<S-l>`            | Normal | Next buffer             |
-| `<S-h>`            | Normal | Previous buffer         |
-| `<`                | Visual | Decrease indent         |
-| `>`                | Visual | Increase indent         |
+| Keymap       | Mode   | Description                 |
+| ------------ | ------ | --------------------------- |
+| `jj`         | Insert | Exit insert mode            |
+| `<leader>y`  | Normal | Open Yazi file manager      |
+| `,w`         | Normal | Write/Save buffer           |
+| `,qq`        | Normal | Quit                        |
+| `,qa`        | Normal | Quit all                    |
+| `,m`         | Normal | Clear search highlights     |
+| `<leader>pu` | Normal | Update plugins + Mason + TS |
+| `<leader>a`  | Normal | LSP code actions            |
+| `<S-l>`      | Normal | Next buffer                 |
+| `<S-h>`      | Normal | Previous buffer             |
+| `<`          | Visual | Decrease indent             |
+| `>`          | Visual | Increase indent             |
 
 ### Diagnostics
 
@@ -139,6 +147,13 @@ This configuration includes the following plugins organized by category:
 | `gO`    | Normal        | Document symbol |
 | `<C-s>` | Insert        | Signature help  |
 
+### Leap (Motion)
+
+| Keymap      | Mode                   | Description          |
+| ----------- | ---------------------- | -------------------- |
+| `<leader>s` | Normal/Visual/Operator | Leap to any location |
+| `<leader>S` | Normal                 | Leap across windows  |
+
 ### Telescope (Fuzzy Finder)
 
 | Keymap      | Mode   | Description                    |
@@ -149,7 +164,7 @@ This configuration includes the following plugins organized by category:
 | `<Space>ss` | Normal | Select Telescope command       |
 | `<Space>sw` | Normal | Search current word            |
 | `<Space>f`  | Normal | Live grep                      |
-| `<Space>se` | Normal | Search diagnostics             |
+| `<Space>sd` | Normal | Search diagnostics             |
 | `<Space>l`  | Normal | Resume last search             |
 | `<Space>u`  | Normal | Search recent files            |
 | `<Space>b`  | Normal | Find buffers                   |
@@ -179,11 +194,27 @@ This configuration includes the following plugins organized by category:
 | `-`       | Normal (tree) | Horizontal split |
 | `R`       | Normal (tree) | Reload tree      |
 
+### File Manager (Yazi)
+
+| Keymap  | Mode (inside Yazi) | Description                     |
+| ------- | ------------------ | ------------------------------- |
+| `<F1>`  | Normal             | Show help                       |
+| `<C-v>` | Normal             | Open file in vertical split     |
+| `<C-x>` | Normal             | Open file in horizontal split   |
+| `<C-t>` | Normal             | Open file in new tab            |
+| `<C-s>` | Normal             | Grep in directory (Telescope)   |
+| `<C-g>` | Normal             | Replace in directory (grug-far) |
+| `<Tab>` | Normal             | Cycle open buffers              |
+| `<C-y>` | Normal             | Copy relative path to selection |
+| `<C-q>` | Normal             | Send to quickfix list           |
+| `<C-\>` | Normal             | Change working directory        |
+| `<C-o>` | Normal             | Open and pick window            |
+
 ### Git (gitsigns)
 
 | Keymap        | Mode     | Description             |
 | ------------- | -------- | ----------------------- |
-| `<leader>lg`  | Normal   | Open LazyGit            |
+| `<Space>g`    | Normal   | Open LazyGit            |
 | `]c`          | Normal   | Next git hunk           |
 | `[c`          | Normal   | Previous git hunk       |
 | `<leader>ghs` | Normal   | Stage hunk              |
@@ -211,7 +242,7 @@ This configuration includes the following plugins organized by category:
 | `gcO`         | Normal        | Add comment above                    |
 | `gcA`         | Normal        | Add comment at end of line           |
 | `<leader>tcn` | Normal        | Next TODO comment                    |
-| `<leader>cn`  | Normal        | Search TODOs via Telescope           |
+| `<leader>ct`  | Normal        | Search TODOs via Telescope           |
 | `<leader>cT`  | Normal        | Search TODO/FIX/FIXME via Telescope  |
 | `<leader>cd`  | Normal        | Generate documentation (Neogen)      |
 
@@ -231,17 +262,21 @@ This configuration includes the following plugins organized by category:
 
 | Keymap             | Mode          | Description                  |
 | ------------------ | ------------- | ---------------------------- |
-| `<leader><up>`     | Normal/Visual | Add cursor above             |
-| `<leader><down>`   | Normal/Visual | Add cursor below             |
-| `<leader><C-up>`   | Normal/Visual | Skip cursor above            |
-| `<leader><C-down>` | Normal/Visual | Skip cursor below            |
+| `<leader><Up>`     | Normal/Visual | Add cursor above             |
+| `<leader><Down>`   | Normal/Visual | Add cursor below             |
+| `<leader><C-Up>`   | Normal/Visual | Skip cursor above            |
+| `<leader><C-Down>` | Normal/Visual | Skip cursor below            |
 | `<C-n>`            | Normal/Visual | Add cursor to next match     |
 | `<C-k>`            | Normal/Visual | Skip next match              |
 | `<C-S-n>`          | Normal/Visual | Add cursor to previous match |
 | `<C-S-k>`          | Normal/Visual | Skip previous match          |
 | `<C-a>`            | Normal/Visual | Add cursors to all matches   |
 | `<C-q>`            | Normal/Visual | Toggle cursors               |
-| `<C-leftmouse>`    | Normal        | Add/remove cursor with click |
+| `<C-LeftMouse>`    | Normal        | Add/remove cursor with click |
+| `<Left>`           | Normal/Visual | Previous cursor (layer)      |
+| `<Right>`          | Normal/Visual | Next cursor (layer)          |
+| `<leader>x`        | Normal/Visual | Delete main cursor (layer)   |
+| `<Esc>`            | Normal        | Enable/clear cursors (layer) |
 
 ### Yanky (Yank History)
 
@@ -249,9 +284,9 @@ This configuration includes the following plugins organized by category:
 | ------------ | ------------- | ------------------------------- |
 | `p`          | Normal/Visual | Put after (charwise)            |
 | `P`          | Normal/Visual | Put before (charwise)           |
-| `<m-p>`      | Normal        | Previous yank entry             |
-| `<m-n>`      | Normal        | Next yank entry                 |
-| `<c-p>`      | Normal        | Put after with reindent         |
+| `<M-p>`      | Normal        | Previous yank entry             |
+| `<M-n>`      | Normal        | Next yank entry                 |
+| `<C-p>`      | Normal        | Put after with reindent         |
 | `=P`         | Normal        | Put before with reindent        |
 | `<leader>p`  | Normal        | Open yank history (Telescope)   |
 | `<leader>yc` | Normal        | Clear yank history              |
@@ -259,18 +294,18 @@ This configuration includes the following plugins organized by category:
 
 ### Terminal (ergoterm)
 
-| Keymap       | Mode   | Description                |
-| ------------ | ------ | -------------------------- |
-| `<leader>tt` | Normal | Toggle terminal, C-d exit  |
-| `<leader>tp` | Normal | Pick terminal, C-d delete  |
-| `<leader>ts` | Normal | Send text to last terminal |
+| Keymap       | Mode          | Description           |
+| ------------ | ------------- | --------------------- |
+| `<leader>tt` | Normal        | New terminal          |
+| `<leader>tp` | Normal        | Pick terminal         |
+| `<leader>ts` | Normal/Visual | Send text to terminal |
 
 ### Markdown
 
 | Keymap      | Mode   | Description            |
 | ----------- | ------ | ---------------------- |
-| `<space>md` | Normal | Start live preview     |
-| `<space>mv` | Normal | Toggle markdown render |
+| `<Space>md` | Normal | Start live preview     |
+| `<Space>mv` | Normal | Toggle markdown render |
 
 ### Notifications
 
@@ -281,6 +316,50 @@ This configuration includes the following plugins organized by category:
 
 ### Search & Replace
 
-| Keymap      | Mode   | Description                |
-| ----------- | ------ | -------------------------- |
-| `<Space>fr` | Normal | Replace in files (Spectre) |
+| Keymap      | Mode   | Description                 |
+| ----------- | ------ | --------------------------- |
+| `<Space>fr` | Normal | Replace in files (grug-far) |
+
+### blink.cmp (Completion Menu)
+
+| Keymap             | Mode   | Description                |
+| ------------------ | ------ | -------------------------- |
+| `<C-Space>`        | Insert | Open menu / show docs      |
+| `<C-n>` / `<Down>` | Insert | Select next item           |
+| `<C-p>` / `<Up>`   | Insert | Select previous item       |
+| `<C-y>`            | Insert | Accept selected completion |
+| `<C-e>`            | Insert | Hide menu                  |
+| `<C-k>`            | Insert | Toggle signature help      |
+| `<Esc>`            | Insert | Cancel / fallback          |
+
+### Neoscroll (Smooth Scrolling)
+
+Smooth scrolling animations are enabled for the following default keys:
+
+| Keymap  | Description           |
+| ------- | --------------------- |
+| `<C-u>` | Scroll half page up   |
+| `<C-d>` | Scroll half page down |
+| `<C-b>` | Scroll full page up   |
+| `<C-f>` | Scroll full page down |
+| `<C-y>` | Scroll up one line    |
+| `<C-e>` | Scroll down one line  |
+| `zt`    | Scroll line to top    |
+| `zz`    | Scroll line to center |
+| `zb`    | Scroll line to bottom |
+
+### mini.clue (Keymap Hints)
+
+Keymap hints are automatically shown when pressing these prefixes:
+
+| Prefix        | Modes          | Description          |
+| ------------- | -------------- | -------------------- |
+| `<Leader>`    | Normal/Visual  | Leader key sequences |
+| `[` / `]`     | Normal         | Bracket navigation   |
+| `g`           | Normal/Visual  | g-key mappings       |
+| `'` / `` ` `` | Normal/Visual  | Marks                |
+| `"`           | Normal/Visual  | Registers            |
+| `<C-r>`       | Insert/Cmdline | Registers            |
+| `<C-w>`       | Normal         | Window commands      |
+| `z`           | Normal/Visual  | Fold/view commands   |
+| `<C-x>`       | Insert         | Built-in completion  |
