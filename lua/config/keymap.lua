@@ -10,7 +10,6 @@ end
 
 -- Blazingly fast way out of insert mode
 vim.keymap.set("i", "jj", "<esc>", { desc = "Exit insert mode" })
-vim.keymap.set("n", "<leader><leader>", vim.lsp.buf.hover, { desc = "Hover" })
 
 -- Quick access to some common actions
 vim.keymap.set("n", ",w", "<cmd>w<cr>", { desc = "Write" })
@@ -28,6 +27,11 @@ vim.keymap.set("n", ",qa", "<cmd>qa!<cr>", { desc = "Quit all" })
 -- CTRL-S (Insert mode) is mapped to vim.lsp.buf.signature_help()
 -- v_an and v_in fall back to LSP vim.lsp.buf.selection_range() if treesitter is not active.
 -- gx handles textDocument/documentLink. Example: with gopls, invoking gx on "os" in this Go code will open documentation externally:
+vim.keymap.del("n", "gra")
+vim.keymap.del("n", "gri")
+vim.keymap.del("n", "grn")
+vim.keymap.del("n", "grr")
+vim.keymap.del("n", "grt")
 vim.keymap.set("n", "<leader>ee", vim.diagnostic.open_float, { desc = "Show diagnostics under cursor" })
 vim.keymap.set("n", "<leader>en", diagnostic_goto(true), { desc = "Next Diagnostic" })
 vim.keymap.set("n", "<leader>ep", diagnostic_goto(false), { desc = "Prev Diagnostic" })

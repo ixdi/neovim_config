@@ -121,7 +121,6 @@ This configuration includes the following plugins organized by category:
 | `,qa`        | Normal | Quit all                    |
 | `,m`         | Normal | Clear search highlights     |
 | `<leader>pu` | Normal | Update plugins + Mason + TS |
-| `<leader>a`  | Normal | LSP code actions            |
 | `<S-l>`      | Normal | Next buffer                 |
 | `<S-h>`      | Normal | Previous buffer             |
 | `<`          | Visual | Decrease indent             |
@@ -137,15 +136,16 @@ This configuration includes the following plugins organized by category:
 
 ### LSP
 
-| Keymap  | Mode          | Description     |
-| ------- | ------------- | --------------- |
-| `gra`   | Normal/Visual | Code action     |
-| `gri`   | Normal        | Implementation  |
-| `grn`   | Normal        | Rename          |
-| `grr`   | Normal        | References      |
-| `grt`   | Normal        | Type definition |
-| `gO`    | Normal        | Document symbol |
-| `<C-s>` | Insert        | Signature help  |
+| Keymap             | Mode          | Description     |
+| ------------------ | ------------- | --------------- |
+| `<leader>a`        | Normal/Visual | Code action     |
+| `gi`               | Normal        | Implementation  |
+| `<leader><leader>` | Normal        | Hover           |
+| `grn`              | Normal        | Rename          |
+| `gf`               | Normal        | References      |
+| `gd`               | Normal        | Definition      |
+| `gO`               | Normal        | Document symbol |
+| `gs`               | Normal        | Signature help  |
 
 ### Leap (Motion)
 

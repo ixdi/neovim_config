@@ -24,14 +24,15 @@
 -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
 --Default keymaps
--- keymap.set("n", "gf", vim.lsp.buf.references, opts) -- show definition, references
--- keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- got to declaration
--- keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- got to declaration
--- keymap.set("n", "gi", vim.lsp.buf.implementation, opts) -- go to implementation
--- keymap.set("n", "gs", vim.lsp.buf.signature_help, opts) -- show signature help
--- -- keymap.set("n", "gt", vim.lsp.buf.type_definition, opts) -- show signature help
+vim.keymap.set("n", "gf", vim.lsp.buf.references, { desc = "Show references" }) -- show definition, references
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Show definition" }) -- got to declaration
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Show declaration" }) -- got to declaration
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Show implementation" }) -- go to implementation
+vim.keymap.set("n", "gs", vim.lsp.buf.signature_help, { desc = "Show signature help" }) -- show signature help
+vim.keymap.set("n", "<leader><leader>", vim.lsp.buf.hover, { desc = "Hover" })
+-- keymap.set("n", "gt", vim.lsp.buf.type_definition, opts) -- show signature help
 -- keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions
--- keymap.set("n", "<leader>rn", vim.lsp.buf.rename) -- smart rename
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Smart rename" }) -- smart rename
 -- keymap.set("n", "[d", "<cmd>lua vim.diagnostic.jump({count=-1, float=true})<CR>", opts) -- jump to previous diagnostic in buffer
 -- keymap.set("n", "]d", "<cmd>lua vim.diagnostic.jump({count=1, float=true})<CR>", opts) -- jump to next diagnostic in buffer
 -- keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
@@ -101,6 +102,7 @@ require("mason-lspconfig").setup({
 		"stylua",
 		"superhtml",
 		"tailwindcss-language-server",
+		"ts_ls",
 	},
 })
 
