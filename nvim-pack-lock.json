@@ -45,7 +45,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "fzf-lua": {
-      "rev": "c8aaa74c97157b2c62bdcfc1e57b15c052dc63ca",
+      "rev": "fea9eedc6894c44d44cbb772a5cd11c93b82d7a1",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
@@ -177,7 +177,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "dcb77511efb1665b5073d8396a0033b3e4d680f6",
+      "rev": "5adf0895310c1904e5abfaad40a2baad7fe44a07",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "telescope-fzf-native.nvim": {
@@ -217,7 +217,7 @@
       "src": "https://github.com/gbprod/yanky.nvim"
     },
     "yazi.nvim": {
-      "rev": "f2f97a45f8cf2630e91b7c81ab182ccb17f00db6",
+      "rev": "2f41b217974a6fd2e1a409d21df672108144d4a4",
       "src": "https://github.com/mikavilpas/yazi.nvim"
     }
   }
