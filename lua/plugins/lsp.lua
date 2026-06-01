@@ -86,7 +86,6 @@ require("mason-lspconfig").setup({
 	automatic_enable = {
 		"bashls",
 		"biome",
-		"cssls",
 		"cucumber_language_server",
 		"docker_compose_language_service",
 		"dockerls",
