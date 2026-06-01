@@ -44,13 +44,12 @@ This configuration includes the following plugins organized by category:
 - **noice.nvim** (`folke/noice.nvim`) - UI replacement for Neovim messages, cmdline, and popupmenu
 - **nvim-colorizer.lua** (`catgoose/nvim-colorizer.lua`) - Highlight color names and codes (CSS, Tailwind, HSL, OKLCH, etc.)
 - **indent-blankline.nvim** (`lukas-reineke/indent-blankline.nvim`) - Show indentation guides
-- **mini.indentscope** (`echasnovski/mini.indentscope`) - Active indent guide with animation
+- **mini.indentscope** (`nvim-mini/mini.indentscope`) - Active indent guide with animation
 - **vim-illuminate** (`RRethy/vim-illuminate`) - Highlight word references under cursor (LSP, Treesitter, regex)
 
 ### Navigation & File Management
 
 - **nvim-tree.lua** (`nvim-tree/nvim-tree.lua`) - File explorer tree view
-- **yazi.nvim** (`mikavilpas/yazi.nvim`) - Yazi file manager integration
 - **nvim-web-devicons** (`nvim-tree/nvim-web-devicons`) - Filetype icons
 - **telescope.nvim** (`nvim-telescope/telescope.nvim`) - Fuzzy finder for files, buffers, grep, and more
 - **telescope-fzf-native.nvim** (`nvim-telescope/telescope-fzf-native.nvim`) - FZF backend for Telescope
@@ -70,7 +69,7 @@ This configuration includes the following plugins organized by category:
 
 - **Comment.nvim** (`numToStr/Comment.nvim`) - Toggle comments with `gc` operator
 - **todo-comments.nvim** (`folke/todo-comments.nvim`) - Highlight and search TODO/FIXME comments
-- **mini.surround** (`echasnovski/mini.surround`) - Add/delete/replace surrounding characters
+- **mini.surround** (`nvim-mini/mini.surround`) - Add/delete/replace surrounding characters
 - **multicursor.nvim** (`jake-stewart/multicursor.nvim`) - Multiple cursor editing
 - **yanky.nvim** (`gbprod/yanky.nvim`) - Enhanced yank history and paste management
 - **nvim-early-retirement** (`chrisgriesder/nvim-early-retirement`) - Auto-close unused buffers
@@ -96,7 +95,6 @@ This configuration includes the following plugins organized by category:
 ### Motion & Scrolling
 
 - **leap.nvim** (`andyg/leap.nvim`) - Fast motion plugin for jumping to any location
-- **neoscroll.nvim** (`karb94/neoscroll.nvim`) - Smooth scrolling animations
 
 ### AI & Copilot
 
@@ -149,10 +147,10 @@ This configuration includes the following plugins organized by category:
 
 ### Leap (Motion)
 
-| Keymap      | Mode                   | Description          |
-| ----------- | ---------------------- | -------------------- |
-| `<leader>s` | Normal/Visual/Operator | Leap to any location |
-| `<leader>S` | Normal                 | Leap across windows  |
+| Keymap       | Mode                   | Description          |
+| ------------ | ---------------------- | -------------------- |
+| `<leader>ss` | Normal/Visual/Operator | Leap to any location |
+| `<leader>SS` | Normal                 | Leap across windows  |
 
 ### Telescope (Fuzzy Finder)
 
@@ -194,22 +192,6 @@ This configuration includes the following plugins organized by category:
 | `-`       | Normal (tree) | Horizontal split |
 | `R`       | Normal (tree) | Reload tree      |
 
-### File Manager (Yazi)
-
-| Keymap  | Mode (inside Yazi) | Description                     |
-| ------- | ------------------ | ------------------------------- |
-| `<F1>`  | Normal             | Show help                       |
-| `<C-v>` | Normal             | Open file in vertical split     |
-| `<C-x>` | Normal             | Open file in horizontal split   |
-| `<C-t>` | Normal             | Open file in new tab            |
-| `<C-s>` | Normal             | Grep in directory (Telescope)   |
-| `<C-g>` | Normal             | Replace in directory (grug-far) |
-| `<Tab>` | Normal             | Cycle open buffers              |
-| `<C-y>` | Normal             | Copy relative path to selection |
-| `<C-q>` | Normal             | Send to quickfix list           |
-| `<C-\>` | Normal             | Change working directory        |
-| `<C-o>` | Normal             | Open and pick window            |
-
 ### Git (gitsigns)
 
 | Keymap        | Mode     | Description             |
@@ -248,15 +230,15 @@ This configuration includes the following plugins organized by category:
 
 ### Surround (mini.surround)
 
-| Keymap | Mode          | Description              |
-| ------ | ------------- | ------------------------ |
-| `sa`   | Normal/Visual | Add surrounding          |
-| `sd`   | Normal        | Delete surrounding       |
-| `sr`   | Normal        | Replace surrounding      |
-| `sf`   | Normal        | Find surrounding (right) |
-| `sF`   | Normal        | Find surrounding (left)  |
-| `sh`   | Normal        | Highlight surrounding    |
-| `sn`   | Normal        | Update n_lines           |
+| Keymap       | Mode          | Description              |
+| ------------ | ------------- | ------------------------ |
+| `<leader>sa` | Normal/Visual | Add surrounding          |
+| `<leader>sd` | Normal        | Delete surrounding       |
+| `<leader>sr` | Normal        | Replace surrounding      |
+| `<leader>sf` | Normal        | Find surrounding (right) |
+| `<leader>sF` | Normal        | Find surrounding (left)  |
+| `<leader>sh` | Normal        | Highlight surrounding    |
+| `<leader>sn` | Normal        | Update n_lines           |
 
 ### Multicursor
 
@@ -331,22 +313,6 @@ This configuration includes the following plugins organized by category:
 | `<C-e>`            | Insert | Hide menu                  |
 | `<C-k>`            | Insert | Toggle signature help      |
 | `<Esc>`            | Insert | Cancel / fallback          |
-
-### Neoscroll (Smooth Scrolling)
-
-Smooth scrolling animations are enabled for the following default keys:
-
-| Keymap  | Description           |
-| ------- | --------------------- |
-| `<C-u>` | Scroll half page up   |
-| `<C-d>` | Scroll half page down |
-| `<C-b>` | Scroll full page up   |
-| `<C-f>` | Scroll full page down |
-| `<C-y>` | Scroll up one line    |
-| `<C-e>` | Scroll down one line  |
-| `zt`    | Scroll line to top    |
-| `zz`    | Scroll line to center |
-| `zb`    | Scroll line to bottom |
 
 ### mini.clue (Keymap Hints)
 

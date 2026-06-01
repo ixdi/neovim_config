@@ -2,7 +2,7 @@
 -- code, this highlights the current level of indentation, and animates
 -- the highlighting.
 vim.pack.add({
-	{ src = "https://github.com/echasnovski/mini.indentscope", event = { "BufReadPre", "BufNewFile" } },
+	{ src = "https://github.com/nvim-mini/mini.indentscope", event = { "BufReadPre", "BufNewFile" } },
 })
 
 require("mini.indentscope").setup({
