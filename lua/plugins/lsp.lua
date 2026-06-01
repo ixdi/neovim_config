@@ -68,8 +68,8 @@ vim.diagnostic.config({
 			[vim.diagnostic.severity.INFO] = "",
 		},
 	},
-	virtual_text = false,
-	virtual_lines = { current_line = true },
+	virtual_text = true,
+	virtual_lines = false,
 })
 
 require("mason").setup({
